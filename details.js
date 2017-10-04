@@ -41,7 +41,7 @@ function init() {
 				var offset = parseInt(data.films[i].offset);
 				for (var i = 0; i < 400; i++) {
 					frames.push(new Image());
-					var path = "/data/" + id + "/frames/" + frameNumber(i + offset) + ".jpg";
+					var path = "./data/" + id + "/frames/" + frameNumber(i + offset) + ".jpg";
 					console.log(path);
 					frames[i].src = path;
 				}
