@@ -41,8 +41,7 @@ function init() {
 				var offset = parseInt(data.films[i].offset);
 				for (var i = 0; i < 400; i++) {
 					frames.push(new Image());
-					var path = "/" + repo + "/data/" + id + "/frames/" + frameNumber(i + offset) + ".jpg";
-					console.log(path);
+					var path = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/data/" + id + "/frames/" + frameNumber(i + offset) + ".jpg";
 					frames[i].src = path;
 				}
 
@@ -116,6 +115,20 @@ function init() {
 		}
 
 		document.getElementById('img-container').appendChild(img);
+
+		var icon = document.createElement('img');
+		icon.id = 'back-home';
+		icon.src = '../rewind-arrow.svg';
+		icon.width = '60';
+		icon.height = '60';
+
+		var backHome = document.createElement('a');
+		backHome.href = "/" + ((window.location.hostname != 'localhost') ? repo : "");
+
+		backHome.appendChild(icon);
+
+		var page = document.getElementById('page');
+		page.insertBefore(backHome, page.firstChild);
 
 	});
 
@@ -201,7 +214,7 @@ function loadJSON2(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType('application/json');
 	var id = window.location.pathname.replace(repo, '').replace(/\//g, '').replace(/films/g, '').replace(/.html/g, '');
-	var path = "/" + repo + "/data/" + id + "/" + id + ".json";
+	var path = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/data/" + id + "/" + id + ".json";
     xobj.open('GET', path, true);
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == '200') {
