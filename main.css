@@ -1,0 +1,146 @@
+body {
+	background-color: #2a2a2a;
+	margin: 0;
+}
+
+#page {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+@keyframes changingColor {
+    0%   {color: Crimson;}
+    12.5%  {color: DarkOrange;}
+    25%  {color: Gold;}
+	37.5%  {color: YellowGreen;}
+	50%  {color: MediumAquaMarine;}
+	62.5%  {color: DodgerBlue;}
+	75%  {color: SlateBlue;}
+	87.5%  {color: DarkMagenta;}
+	100%   {color: Crimson;}
+}
+
+@keyframes changingBGColor {
+    0%   {background-color: Crimson;}
+    12.5%  {background-color: DarkOrange;}
+    25%  {background-color: Gold;}
+	37.5%  {background-color: YellowGreen;}
+	50%  {background-color: MediumAquaMarine;}
+	62.5%  {background-color: DodgerBlue;}
+	75%  {background-color: SlateBlue;}
+	87.5%  {background-color: DarkMagenta;}
+	100%   {background-color: Crimson;}
+}
+
+#website-title {
+	display: flex;
+	font-size: 4vw;
+	align-items: center;
+	text-align: center;
+	/*
+	text-shadow:	1px 1px #000000,
+					2px 2px #000000,
+					3px 3px #000000,
+					4px 4px #000000,
+					5px 5px #000000,
+					6px 6px #000000,
+					7px 7px #000000,
+					8px 8px #000000,
+					9px 9px #000000,
+					10px 10px #000000;
+	*/
+	font-family: 'Abril Fatface', serif;
+	animation-name: changingColor;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#credits {
+	display: flex;
+	font-size: 1vw;
+	align-items: center;
+	text-align: center;
+	font-family: 'Cormorant Garamond', serif;
+	font-style: italic;
+	animation-name: changingBGColor;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.info {
+	text-align: center;
+	color: #f2f2f2;
+	font-family: 'Playfair Display SC', serif;
+	margin-top: 0;
+	margin-bottom: 0.5vmin;
+}
+
+.info h1 {
+	font-size: 1.4vw;
+}
+
+.info h2 {
+	font-size: 1vw;
+	font-weight: lighter;
+
+}
+
+.info h3 {
+	font-size: 1vw;
+	font-style: italic;
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+	width: 12.5vw;
+	height: 12.5vw;
+	cursor: pointer;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.front, .back {
+	width: 100%;
+	height: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* front pane, placed above back */
+.front {
+	background-color: red;
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	background-color: blue;
+	transform: rotateY(180deg);
+}

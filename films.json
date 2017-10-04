@@ -1,0 +1,141 @@
+{
+	"films": [
+		{
+			"id": "300",
+			"title": "300",
+			"year": "2006",
+			"director": "Zack Snyder",
+			"color": "#43392e",
+			"offset": "3"
+		},
+		{
+			"id": "AmeliePoulain",
+			"title": "Amélie Poulain",
+			"year": "2000",
+			"director": "Jean-Pierre Jeunet",
+			"color": "#503c14",
+			"offset": "5"
+		},
+		{
+			"id": "BladeRunner",
+			"title": "Blade Runner",
+			"year": "1982",
+			"director": "Ridley Scott",
+			"color": "#1c2523",
+			"offset": "3"
+		},
+		{
+			"id": "GuardiansOfTheGalaxy",
+			"title": "Guardians of <br /> the Galaxy",
+			"year": "2014",
+			"director": "James Gunn",
+			"color": "#2d2c2a",
+			"offset": "3"
+		},
+		{
+			"id": "LaLaLand",
+			"title": "La La Land",
+			"year": "2016",
+			"director": "Damien Chazelle",
+			"color": "#2e2d30",
+			"offset": "3"
+		},
+		{
+			"id": "LeRoiEtLOiseau",
+			"title": "Le Roi et <br /> l'Oiseau",
+			"year": "1979",
+			"director": "Paul Grimault",
+			"color": "#525958",
+			"offset": "3"
+		},
+		{
+			"id": "MadMaxFuryRoad",
+			"title": "Mad Max: <br /> Fury Road",
+			"year": "2015",
+			"director": "George Miller",
+			"color": "#634e41",
+			"offset": "3"
+		},
+		{
+			"id": "MaryPoppins",
+			"title": "Mary Poppins",
+			"year": "1964",
+			"director": "Robert Stevenson",
+			"color": "#3e3e41",
+			"offset": "9"
+		},
+		{
+			"id": "Memento",
+			"title": "Memento",
+			"year": "2000",
+			"director": "Christopher Nolan",
+			"color": "#403b39",
+			"offset": "5"
+		},
+		{
+			"id": "Mommy",
+			"title": "Mommy",
+			"year": "2014",
+			"director": "Xavier Dolan",
+			"color": "#3d372f",
+			"offset": "8"
+		},
+		{
+			"id": "MrNobody",
+			"title": "Mr. Nobody",
+			"year": "2009",
+			"director": "Jaco van Dormael",
+			"color": "#51524c",
+			"offset": "3"
+		},
+		{
+			"id": "SpeedRacer",
+			"title": "Speed Racer",
+			"year": "2008",
+			"director": "Lana & Lilly Wachowski",
+			"color": "#503940",
+			"offset": "3"
+		},
+		{
+			"id": "StarTrekIntoDarkness",
+			"title": "Star Trek <br /> Into Darkness",
+			"year": "2013",
+			"director": "J. J. Abrams",
+			"color": "#36484b",
+			"offset": "6"
+		},
+		{
+			"id": "StarWars",
+			"title": "Star Wars IV: <br /> A New Hope",
+			"year": "1977",
+			"director": "George Lucas",
+			"color": "#332d31",
+			"offset": "3"
+		},
+		{
+			"id": "TheMatrix",
+			"title": "The Matrix",
+			"year": "1999",
+			"director": "Lana & Lilly Wachowski",
+			"color": "#273028",
+			"offset": "3"
+		},
+		{
+			"id": "TheWizardOfOz",
+			"title": "The Wizard <br /> of Oz",
+			"year": "1939",
+			"director": "Victor Fleming",
+			"color": "#44392e",
+			"offset": "3"
+		},
+		{
+			"id": "Tron",
+			"title": "Tron",
+			"year": "1982",
+			"director": "Steven Lisberger",
+			"color": "#282a3d",
+			"offset": "3"
+		}
+	]
+
+}

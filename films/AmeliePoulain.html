@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC|Cormorant+Garamond' rel='stylesheet'>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+		<script src='../details.js'></script>
+		<link rel='stylesheet' href='../details.css'>
+		<link rel='stylesheet' href='../animsition/animsition.css'>
+		<script type='text/javascript' src='../animsition/animsition.js'></script>
+		<script>
+			$(document).ready(function() {
+			  $('#page').animsition();
+			});
+		</script>
+    </head>
+	<body onload='init()'>
+		<div id='page'
+			data-animsition-in-class='zoom-in'
+			data-animsition-in-duration='800'>
+			<a href='/'>
+				<img id='back-home' src='../rewind-arrow.svg' width='60' height='60'>
+			</a>
+			<div id='img-container'></div>
+			<div id='info-container'>
+				<div id='info'>
+					<div id='text'></div>
+					<div id='frame'>
+						<img id='frame-img' src='' />
+						<h3 id='color-code'></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
