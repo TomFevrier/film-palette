@@ -9,14 +9,17 @@ function init() {
 				websiteTitle.id = 'website-title';
 				websiteTitle.classList.add('front');
 				websiteTitle.style.width = '25vw';
-				websiteTitle.style.backgroundColor = '#f2f2f2';
 				websiteTitle.innerHTML = "FILM PALETTE";
 
 				var credits = document.createElement('div');
 				credits.id = 'credits';
 				credits.classList.add('back');
 				credits.style.width = '25vw';
-				credits.innerHTML = "Programmed by Tom Février <br /> All rights reserved";
+				var text = "<h4>Designed and developed by</h4><h1>Tom Février</h1>";
+				text += "<h2>What is it?</h2>";
+				text += "<h3>An artistic visualization <br /> of the use of color in films</h3>";
+				text += "<p><i>Send your suggestions to tomfevrier@gmail.com</i></p>";
+				credits.innerHTML = text;
 
 				var flipper = document.createElement('div');
 				flipper.classList.add('flipper');

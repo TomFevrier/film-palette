@@ -34,6 +34,7 @@ body {
 }
 
 #website-title {
+	background-color: #f2f2f2;
 	display: flex;
 	font-size: 4vw;
 	align-items: center;
@@ -59,16 +60,48 @@ body {
 
 #credits {
 	display: flex;
-	font-size: 1vw;
+	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	font-family: 'Cormorant Garamond', serif;
-	font-style: italic;
+	color: #f2f2f2;
 	animation-name: changingBGColor;
 	animation-duration: 20s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
+
+#credits h1 {
+	font-family: 'Playfair Display SC', serif;
+	font-size: 1.2vw;
+	margin: 0 0 2vh 0;
+}
+
+#credits h2 {
+	font-family: 'Playfair Display SC', serif;
+	font-size: 1.2vw;
+	font-weight: lighter;
+	margin: 0;
+}
+
+#credits h3 {
+	font-size: 1vw;
+	font-weight: lighter;
+	margin: 0 0 2vh 0;
+}
+
+#credits h4 {
+	font-style: italic;
+	font-size: 1vw;
+	margin: 0;
+}
+
+#credits p {
+	font-size: 0.8vw;
+	margin: 0;
+}
+
+
 
 .info {
 	text-align: center;
@@ -109,6 +142,7 @@ body {
 .front, .back {
 	width: 100%;
 	height: 100%;
+	background-color: #2a2a2a;
 }
 
 /* flip speed goes here */

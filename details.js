@@ -6,11 +6,12 @@ function init() {
 
 	loadJSON1(function(response) {
 		var data = JSON.parse(response);
-		var id = window.location.pathname.slice(0, -5).substr(7);
+		var id = window.location.pathname.replace(repo, '').replace(/\//g, '').replace(/films/g, '').replace(/.html/g, '');
 
 		var music = document.createElement('audio');
 		music.src = "/data/" + id + "/" + id + ".mp3";
 		music.autoplay = 'true';
+		music.loop = 'true';
 		music.volume = '0.2';
 
 		for (var i = 0; i < data.films.length; i++) {
@@ -41,6 +42,7 @@ function init() {
 				for (var i = 0; i < 400; i++) {
 					frames.push(new Image());
 					var path = "/data/" + id + "/frames/" + frameNumber(i + offset) + ".jpg";
+					console.log(path);
 					frames[i].src = path;
 				}
 
@@ -55,25 +57,25 @@ function init() {
 	loadJSON2(function(response) {
 
 		var data = JSON.parse(response);
-		var id = window.location.pathname.slice(0, -5).substr(7).replace(repo, '');
+		var id = window.location.pathname.replace(repo, '').replace(/\//g, '').replace(/films/g, '').replace(/.html/g, '');
+
+		var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		unit = Math.min(Math.floor(0.05*h), Math.floor(0.02*w));
+		var dimension = unit*20;
 
 		var info = document.createElement('p');
 		if (data.info != undefined) {
 			info.innerHTML = data.info;
 		}
 		else {
-			info.innerHTML = "No description available yet"
+			info.innerHTML = "No description available yet."
 		}
 		info.style.textAlign = 'justify';
+		info.style.width = Math.floor(0.3*w) + 'px';
 
 		var text = document.getElementById('text');
 		text.appendChild(info);
-
-		var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-
-		unit = Math.min(Math.floor(0.05*h), Math.floor(0.02*w));
-		var dimension = unit*20;
 
 		var frame = document.getElementById('frame');
 		var imgForRatio = new Image();
@@ -198,7 +200,7 @@ function loadJSON1(callback) {
 function loadJSON2(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType('application/json');
-	var id = window.location.pathname.slice(0, -5).substr(7).replace(repo, '');
+	var id = window.location.pathname.replace(repo, '').replace(/\//g, '').replace(/films/g, '').replace(/.html/g, '');
 	var path = "/data/" + id + "/" + id + ".json";
     xobj.open('GET', path, true);
     xobj.onreadystatechange = function () {

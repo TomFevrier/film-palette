@@ -21,7 +21,7 @@ body {
 }
 
 #img-container {
-	width: 50%;
+	width: 55%;
 	height: 100vh;
 	display: flex;
 	justify-content: flex-end;
@@ -43,7 +43,7 @@ body {
 }
 
 #info-container {
-	width: 50%;
+	width: 45%;
 	height: 100vh;
 	display: flex;
 	justify-content: flex-start;
@@ -82,7 +82,6 @@ body {
 #frame {
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
 }
 
 #color-code {
