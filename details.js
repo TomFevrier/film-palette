@@ -41,7 +41,7 @@ function init() {
 				var offset = parseInt(data.films[i].offset);
 				for (var i = 0; i < 400; i++) {
 					frames.push(new Image());
-					var path = "./data/" + id + "/frames/" + frameNumber(i + offset) + ".jpg";
+					var path = "/" + repo + "/data/" + id + "/frames/" + frameNumber(i + offset) + ".jpg";
 					console.log(path);
 					frames[i].src = path;
 				}
@@ -201,7 +201,7 @@ function loadJSON2(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType('application/json');
 	var id = window.location.pathname.replace(repo, '').replace(/\//g, '').replace(/films/g, '').replace(/.html/g, '');
-	var path = "/data/" + id + "/" + id + ".json";
+	var path = "/" + repo + "/data/" + id + "/" + id + ".json";
     xobj.open('GET', path, true);
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == '200') {
