@@ -61,9 +61,10 @@ body {
 
 #text h1 {
 	font-size: 6vmin;
+	line-height: 95%;
 	font-family: 'Playfair Display SC', serif;
 	margin-top: 0;
-	margin-bottom: 0.2vmin;
+	margin-bottom: 1vmin;
 }
 
 #text h2 {

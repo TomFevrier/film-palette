@@ -25,6 +25,14 @@
 			"offset": "3"
 		},
 		{
+			"id": "GoneWithTheWind",
+			"title": "Gone with <br /> the Wind",
+			"year": "1939",
+			"director": "Victor Fleming",
+			"color": "#322118",
+			"offset": "15"
+		},
+		{
 			"id": "GuardiansOfTheGalaxy",
 			"title": "Guardians of <br /> the Galaxy",
 			"year": "2014",
@@ -86,7 +94,7 @@
 			"year": "2009",
 			"director": "Jaco van Dormael",
 			"color": "#51524c",
-			"offset": "3"
+			"offset": "1"
 		},
 		{
 			"id": "SpeedRacer",

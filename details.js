@@ -6,13 +6,13 @@ function init() {
 
 	loadJSON1(function(response) {
 		var data = JSON.parse(response);
-		var id = window.location.pathname.replace(repo, '').replace(/\//g, '').replace(/films/g, '').replace(/.html/g, '');
+		var id = window.location.hash.replace(/#/g, '');
 
 		var music = document.createElement('audio');
-		music.src = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/data/" + id + "/" + id + ".mp3";
+		music.src = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/films/" + id + "/" + id + ".mp3";
 		music.autoplay = 'true';
 		music.loop = 'true';
-		music.volume = '0.2';
+		music.volume = '0.1';
 
 		for (var i = 0; i < data.films.length; i++) {
 
@@ -30,7 +30,7 @@ function init() {
 				}
 
 				var title = document.createElement('h1');
-				title.innerHTML = data.films[i].title.replace('<br />', '');
+				title.innerHTML = data.films[i].title;
 				document.title = title.innerHTML;
 
 				var director = document.createElement('h2');
@@ -41,7 +41,7 @@ function init() {
 				var offset = parseInt(data.films[i].offset);
 				for (var i = 0; i < 400; i++) {
 					frames.push(new Image());
-					var path = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/data/" + id + "/frames/" + frameNumber(i + offset) + ".jpg";
+					var path = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/films/" + id + "/frames/" + frameNumber(i + offset) + ".jpg";
 					frames[i].src = path;
 				}
 
@@ -56,7 +56,7 @@ function init() {
 	loadJSON2(function(response) {
 
 		var data = JSON.parse(response);
-		var id = window.location.pathname.replace(repo, '').replace(/\//g, '').replace(/films/g, '').replace(/.html/g, '');
+		var id = window.location.hash.replace(/#/g, '');
 
 		var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -82,7 +82,7 @@ function init() {
 			frame.style.width = Math.floor(0.3*w) + 'px';
 			frame.style.height = Math.floor(imgForRatio.height / (imgForRatio.width/(0.3*w))) + unit + 'px';
 		}
-		imgForRatio.src = "../data/" + id + "/frames/001.jpg";
+		imgForRatio.src = "../films/" + id + "/frames/001.jpg";
 
 		document.getElementById('color-code').style.fontSize = (unit/1.5) + 'px';
 
@@ -213,8 +213,8 @@ function loadJSON1(callback) {
 function loadJSON2(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType('application/json');
-	var id = window.location.pathname.replace(repo, '').replace(/\//g, '').replace(/films/g, '').replace(/.html/g, '');
-	var path = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/data/" + id + "/" + id + ".json";
+	var id = window.location.hash.replace(/#/g, '');
+	var path = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/films/" + id + "/" + id + ".json";
     xobj.open('GET', path, true);
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == '200') {

@@ -30,34 +30,44 @@ function init() {
 				container.classList.add('flip-container');
 				container.style.width = '25vw';
 				container.appendChild(flipper);
+				container.setAttribute('onclick', "window.open('https://github.com/TomFevrier/film-palette', '_blank')");
 
 				var page = document.getElementById('page');
 				page.appendChild(container);
 			}
 
+			var color = data.films[i].color;
+			var rgb = getRGBColor(color);
+			var brightness = (parseInt(rgb[0]) + parseInt(rgb[1]) + parseInt(rgb[2])) / 3;
 
 			var title = document.createElement('h1');
 			title.innerHTML = data.films[i].title;
 
 			var director = document.createElement('h2');
 			director.innerHTML = data.films[i].director;
-			var color = document.createElement('h3');
-			color.innerHTML = data.films[i].color;
+			var colorCode = document.createElement('h3');
+			colorCode.innerHTML = data.films[i].color;
 
 			var info = document.createElement('div');
 			info.classList.add('info');
+			if (brightness >= 128) {
+				info.style.color = '#2a2a2a';
+			}
+			else {
+				info.style.color = '#f2f2f2';
+			}
 			info.appendChild(title);
 			info.appendChild(director);
-			info.appendChild(color);
+			info.appendChild(colorCode);
 
 			var front = document.createElement('div');
 			front.classList.add('front');
-			front.style.backgroundImage = "url('data/" + data.films[i].id + "/" + data.films[i].id + ".png')";
+			front.style.backgroundImage = "url('films/" + data.films[i].id + "/" + data.films[i].id + ".png')";
 			front.style.backgroundSize = '100% 100%';
 
 			var back = document.createElement('div');
 			back.classList.add('back');
-			back.style.backgroundColor = data.films[i].color;
+			back.style.backgroundColor = color;
 			back.appendChild(info);
 
 			var flipper = document.createElement('div');
@@ -67,7 +77,7 @@ function init() {
 
 			var container = document.createElement('div');
 			container.classList.add('flip-container');
-			container.setAttribute('onclick', "location.href='films/" + data.films[i].id + ".html'");
+			container.setAttribute('onclick', "location.href='/film.html#" + data.films[i].id + "'");
 			container.appendChild(flipper);
 
 			var page = document.getElementById('page');
@@ -77,8 +87,14 @@ function init() {
 
 }
 
-
-
+function getRGBColor(hex) {
+	hex = hex.substr(1);
+	var bigint = parseInt(hex, 16);
+	var r = (bigint >> 16) & 255;
+	var g = (bigint >> 8) & 255;
+	var b = bigint & 255;
+    return [r, g, b];
+}
 
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();

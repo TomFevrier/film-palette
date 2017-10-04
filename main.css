@@ -24,7 +24,7 @@ body {
 @keyframes changingBGColor {
     0%   {background-color: Crimson;}
     12.5%  {background-color: DarkOrange;}
-    25%  {background-color: Gold;}
+    25%  {background-color: Orange;}
 	37.5%  {background-color: YellowGreen;}
 	50%  {background-color: MediumAquaMarine;}
 	62.5%  {background-color: DodgerBlue;}
@@ -34,7 +34,7 @@ body {
 }
 
 #website-title {
-	background-color: #f2f2f2;
+	background-color: Gainsboro;
 	display: flex;
 	font-size: 4vw;
 	align-items: center;
@@ -102,10 +102,8 @@ body {
 }
 
 
-
 .info {
 	text-align: center;
-	color: #f2f2f2;
 	font-family: 'Playfair Display SC', serif;
 	margin-top: 0;
 	margin-bottom: 0.5vmin;
