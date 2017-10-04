@@ -9,7 +9,7 @@ function init() {
 		var id = window.location.pathname.replace(repo, '').replace(/\//g, '').replace(/films/g, '').replace(/.html/g, '');
 
 		var music = document.createElement('audio');
-		music.src = "/data/" + id + "/" + id + ".mp3";
+		music.src = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/data/" + id + "/" + id + ".mp3";
 		music.autoplay = 'true';
 		music.loop = 'true';
 		music.volume = '0.2';
