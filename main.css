@@ -12,7 +12,7 @@ body {
 @keyframes changingColor {
     0%   {color: Crimson;}
     12.5%  {color: DarkOrange;}
-    25%  {color: Gold;}
+    25%  {color: Orange;}
 	37.5%  {color: YellowGreen;}
 	50%  {color: MediumAquaMarine;}
 	62.5%  {color: DodgerBlue;}
