@@ -77,7 +77,7 @@ function init() {
 
 			var container = document.createElement('div');
 			container.classList.add('flip-container');
-			container.setAttribute('onclick', "location.href='/film.html#" + data.films[i].id + "'");
+			container.setAttribute('onclick', "location.href='" + window.location.href +  "/film.html#" + data.films[i].id + "'");
 			container.appendChild(flipper);
 
 			var page = document.getElementById('page');
