@@ -4,6 +4,10 @@ body {
 	overflow-y: hidden;
 }
 
+#preload {
+	visibility: hidden;
+}
+
 #page {
 	display: flex;
 }

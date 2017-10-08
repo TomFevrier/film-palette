@@ -31,7 +31,7 @@ function init() {
 
 				var title = document.createElement('h1');
 				title.innerHTML = data.films[i].title;
-				document.title = title.innerHTML;
+				document.title = data.films[i].title.replace('<br />', '');
 
 				var director = document.createElement('h2');
 				director.innerHTML = data.films[i].director;
@@ -130,6 +130,8 @@ function init() {
 		var page = document.getElementById('page');
 		page.insertBefore(backHome, page.firstChild);
 
+		var preload = document.getElementById('preload');
+		preload.style.visibility = 'visible';
 	});
 
 }

@@ -3,6 +3,10 @@ body {
 	margin: 0;
 }
 
+#preload {
+	visibility: hidden;
+}
+
 #page {
 	display: flex;
 	flex-wrap: wrap;
