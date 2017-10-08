@@ -82,7 +82,7 @@ function init() {
 			frame.style.width = Math.floor(0.3*w) + 'px';
 			frame.style.height = Math.floor(imgForRatio.height / (imgForRatio.width/(0.3*w))) + unit + 'px';
 		}
-		imgForRatio.src = "../films/" + id + "/frames/001.jpg";
+		imgForRatio.src = "/films/" + id + "/frames/001.jpg";
 
 		document.getElementById('color-code').style.fontSize = (unit/1.5) + 'px';
 
@@ -118,7 +118,7 @@ function init() {
 
 		var icon = document.createElement('img');
 		icon.id = 'back-home';
-		icon.src = '../rewind-arrow.svg';
+		icon.src = 'rewind-arrow.svg';
 		icon.width = '60';
 		icon.height = '60';
 
@@ -203,7 +203,7 @@ function frameNumber(i) {
 function loadJSON1(callback) {
 	var xobj = new XMLHttpRequest();
     xobj.overrideMimeType('application/json');
-    xobj.open('GET', '/films.json', true);
+    xobj.open('GET', 'films.json', true);
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == '200') {
             callback(xobj.responseText);
