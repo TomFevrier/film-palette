@@ -48,6 +48,9 @@ function init() {
 				text.appendChild(title);
 				text.appendChild(director);
 
+				var preload = document.getElementById('preload');
+				preload.style.visibility = 'visible';
+
 				break;
 			}
 		}
@@ -129,9 +132,6 @@ function init() {
 
 		var page = document.getElementById('page');
 		page.insertBefore(backHome, page.firstChild);
-
-		var preload = document.getElementById('preload');
-		preload.style.visibility = 'visible';
 	});
 
 }
