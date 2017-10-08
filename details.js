@@ -203,7 +203,7 @@ function frameNumber(i) {
 function loadJSON1(callback) {
 	var xobj = new XMLHttpRequest();
     xobj.overrideMimeType('application/json');
-    xobj.open('GET', '../films.json', true);
+    xobj.open('GET', '/films.json', true);
     xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == '200') {
             callback(xobj.responseText);
