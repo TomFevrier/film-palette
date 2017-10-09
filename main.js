@@ -94,9 +94,6 @@ function init() {
 
 			var page = document.getElementById('page');
 			page.appendChild(container);
-
-			var preload = document.getElementById('preload');
-			preload.style.visibility = 'visible';
 		}
 	});
 
