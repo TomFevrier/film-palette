@@ -4,8 +4,9 @@ body {
 	overflow-y: hidden;
 }
 
-#preload {
+.preload {
 	visibility: hidden;
+	transition: none !important;
 }
 
 #page {

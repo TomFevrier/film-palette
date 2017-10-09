@@ -3,8 +3,9 @@ body {
 	margin: 0;
 }
 
-#preload {
+.preload {
 	visibility: hidden;
+	transition: none !important;
 }
 
 #page {

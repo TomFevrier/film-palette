@@ -2,6 +2,8 @@ function init() {
 	loadJSON(function(response) {
 		var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 		var data = JSON.parse(response);
+		var loaded = 0;
+
 		for (var i = 0; i < data.films.length; i++) {
 
 			if (i == 11) {
@@ -60,9 +62,19 @@ function init() {
 			info.appendChild(director);
 			info.appendChild(colorCode);
 
+			var img = new Image();
+			img.src = data.films[i].id + "/" + data.films[i].id + ".png";
+			img.onload = function() {
+				loaded++;
+				if (loaded == data.films.length) {
+					var preload = document.getElementsByClassName('preload')[0];
+					preload.removeAttribute('class');
+				}
+			}
+
 			var front = document.createElement('div');
 			front.classList.add('front');
-			front.style.backgroundImage = "url('films/" + data.films[i].id + "/" + data.films[i].id + ".png')";
+			front.style.backgroundImage = "url('films/" + )";
 			front.style.backgroundSize = '100% 100%';
 
 			var back = document.createElement('div');

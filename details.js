@@ -39,17 +39,22 @@ function init() {
 				var text = document.getElementById('text');
 
 				var offset = parseInt(data.films[i].offset);
+				var loaded = 0;
 				for (var i = 0; i < 400; i++) {
 					frames.push(new Image());
 					var path = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/films/" + id + "/frames/" + frameNumber(i + offset) + ".jpg";
 					frames[i].src = path;
+					frames[i].onload = function() {
+						loaded++;
+						if (loaded == 400) {
+							var preload = document.getElementsByClassName('preload')[0];
+							preload.removeAttribute('class');
+						}
+					};
 				}
 
 				text.appendChild(title);
 				text.appendChild(director);
-
-				var preload = document.getElementById('preload');
-				preload.style.visibility = 'visible';
 
 				break;
 			}
