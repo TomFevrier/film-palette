@@ -90,7 +90,7 @@ function init() {
 			frame.style.width = Math.floor(0.3*w) + 'px';
 			frame.style.height = Math.floor(imgForRatio.height / (imgForRatio.width/(0.3*w))) + unit + 'px';
 		}
-		imgForRatio.src = "/films/" + id + "/frames/001.jpg";
+		imgForRatio.src = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/films/" + id + "/frames/001.jpg";
 
 		document.getElementById('color-code').style.fontSize = (unit/1.5) + 'px';
 
