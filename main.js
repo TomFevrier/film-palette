@@ -63,7 +63,7 @@ function init() {
 			info.appendChild(colorCode);
 
 			var img = new Image();
-			img.src = data.films[i].id + "/" + data.films[i].id + ".png";
+			img.src = "films/" + data.films[i].id + "/" + data.films[i].id + ".png";
 			img.onload = function() {
 				loaded++;
 				if (loaded == data.films.length) {
@@ -74,7 +74,7 @@ function init() {
 
 			var front = document.createElement('div');
 			front.classList.add('front');
-			front.style.backgroundImage = "url('films/" + )";
+			front.style.backgroundImage = "url('" + img.src + "')";
 			front.style.backgroundSize = '100% 100%';
 
 			var back = document.createElement('div');
