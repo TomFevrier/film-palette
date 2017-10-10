@@ -53,6 +53,7 @@ function init() {
 							loadPage();
 						}
 					};
+					console.log("Loaded: " + frames[i].src);
 				}
 
 				text.appendChild(title);
