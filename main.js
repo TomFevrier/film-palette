@@ -67,8 +67,7 @@ function init() {
 			img.onload = function() {
 				loaded++;
 				if (loaded == data.films.length) {
-					var preload = document.getElementsByClassName('preload')[0];
-					preload.removeAttribute('class');
+					loadPage();
 				}
 			}
 
@@ -96,6 +95,16 @@ function init() {
 			page.appendChild(container);
 		}
 	});
+
+}
+
+function loadPage() {
+	var preloadScr = document.getElementById('preload');
+	preloadScr.style.display = 'none';
+	var preloading = document.getElementsByClassName('preloading')[0];
+	preloading.removeAttribute('class');
+	var page = document.getElementById('page');
+	page.style.animation = 'fade-in-zoom 1s ease';
 
 }
 

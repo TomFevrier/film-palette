@@ -47,8 +47,7 @@ function init() {
 					frames[i].onload = function() {
 						loaded++;
 						if (loaded == 400) {
-							var preload = document.getElementsByClassName('preload')[0];
-							preload.removeAttribute('class');
+							loadPage();
 						}
 					};
 				}
@@ -130,6 +129,12 @@ function init() {
 		icon.width = '60';
 		icon.height = '60';
 
+		var sound = document.createElement('img');
+		icon.id = 'sound';
+		icon.src = 'rewind-arrow.svg';
+		icon.width = '60';
+		icon.height = '60';
+
 		var backHome = document.createElement('a');
 		backHome.href = "/" + ((window.location.hostname != 'localhost') ? repo : "");
 
@@ -139,6 +144,16 @@ function init() {
 		page.insertBefore(backHome, page.firstChild);
 	});
 
+}
+
+
+function loadPage() {
+	var preloadScr = document.getElementById('preload');
+	preloadScr.style.display = 'none';
+	var preloading = document.getElementsByClassName('preloading')[0];
+	preloading.removeAttribute('class');
+	var page = document.getElementById('page');
+	page.style.animation = 'slide-in 0.8s ease-out';
 }
 
 
