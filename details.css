@@ -57,6 +57,18 @@ body {
 	transform: scale(1.2);
 }
 
+#sound-control {
+	position: fixed;
+	top: 5vmin;
+	right: 5vmin;
+	transition: all .2s ease-in-out;
+}
+
+#sound-control:hover {
+	transform-origin: center;
+	transform: scale(1.2);
+}
+
 #img-container {
 	width: 55%;
 	height: 100vh;

@@ -9,10 +9,13 @@ function init() {
 		var id = window.location.hash.replace(/#/g, '');
 
 		var music = document.createElement('audio');
+		music.id = 'music';
 		music.src = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/films/" + id + "/" + id + ".mp3";
 		music.autoplay = 'true';
 		music.loop = 'true';
 		music.volume = '0.1';
+
+		document.body.appendChild(music);
 
 		for (var i = 0; i < data.films.length; i++) {
 
@@ -123,25 +126,29 @@ function init() {
 
 		document.getElementById('img-container').appendChild(img);
 
-		var icon = document.createElement('img');
-		icon.id = 'back-home';
-		icon.src = 'rewind-arrow.svg';
-		icon.width = '60';
-		icon.height = '60';
+		var iconBack = document.createElement('img');
+		iconBack.id = 'back-home';
+		iconBack.src = 'rewind-arrow.svg';
+		iconBack.width = '60';
+		iconBack.height = '60';
 
-		var sound = document.createElement('img');
-		icon.id = 'sound';
-		icon.src = 'rewind-arrow.svg';
-		icon.width = '60';
-		icon.height = '60';
+		var soundControl = document.createElement('img');
+		soundControl.id = 'sound-control';
+		soundControl.src = 'speaker-on.png';
+		soundControl.height = '60';
+		soundControl.width = '68';
+		soundControl.style.cursor = 'pointer';
+		soundControl.onclick = function() { mute() };
 
 		var backHome = document.createElement('a');
 		backHome.href = "/" + ((window.location.hostname != 'localhost') ? repo : "");
 
-		backHome.appendChild(icon);
+		backHome.appendChild(iconBack);
 
 		var page = document.getElementById('page');
+		page.insertBefore(soundControl, page.firstChild);
 		page.insertBefore(backHome, page.firstChild);
+
 	});
 
 }
@@ -156,6 +163,23 @@ function loadPage() {
 	page.style.animation = 'slide-in 0.8s ease-out';
 }
 
+function mute() {
+	var music = document.getElementById('music');
+	music.muted = true;
+	var soundControl = document.getElementById('sound-control');
+	soundControl.src = 'speaker-mute.png';
+	soundControl.onclick = function() { unmute() };
+
+}
+
+function unmute() {
+	var music = document.getElementById('music');
+	music.muted = false;
+	var soundControl = document.getElementById('sound-control');
+	soundControl.src = 'speaker-on.png';
+	soundControl.onclick = function() { mute() };
+
+}
 
 function hideFrame() {
 	var frame = document.getElementById('frame');
