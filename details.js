@@ -14,6 +14,7 @@ function init() {
 		music.autoplay = 'true';
 		music.loop = 'true';
 		music.volume = '0.1';
+		music.pause();
 
 		document.body.appendChild(music);
 
@@ -53,7 +54,6 @@ function init() {
 							loadPage();
 						}
 					};
-					console.log("Loaded: " + frames[i].src);
 				}
 
 				text.appendChild(title);
@@ -93,7 +93,7 @@ function init() {
 			frame.style.width = Math.floor(0.3*w) + 'px';
 			frame.style.height = Math.floor(imgForRatio.height / (imgForRatio.width/(0.3*w))) + unit + 'px';
 		}
-		imgForRatio.src = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/films/" + id + "/frames/001.jpg";
+		imgForRatio.src = ((window.location.hostname != 'localhost') ? ("/" + repo) : "") + "/films/" + id + "/frames/042.jpg";
 
 		document.getElementById('color-code').style.fontSize = (unit/1.5) + 'px';
 
@@ -156,6 +156,8 @@ function init() {
 
 
 function loadPage() {
+	var music = document.getElementById('music');
+	music.play();
 	var preloadScr = document.getElementById('preload');
 	preloadScr.style.display = 'none';
 	var preloading = document.getElementsByClassName('preloading')[0];

@@ -22,7 +22,7 @@
 			"year": "1982",
 			"director": "Ridley Scott",
 			"color": "#1c2523",
-			"offset": "3"
+			"offset": "2"
 		},
 		{
 			"id": "GoneWithTheWind",
@@ -93,8 +93,8 @@
 			"title": "Mr. Nobody",
 			"year": "2009",
 			"director": "Jaco van Dormael",
-			"color": "#51524c",
-			"offset": "1"
+			"color": "#52534d",
+			"offset": "9"
 		},
 		{
 			"id": "SpeedRacer",
@@ -129,12 +129,20 @@
 			"offset": "3"
 		},
 		{
+			"id": "TheReturnOfTheKing",
+			"title": "The Return <br /> of the King",
+			"year": "2003",
+			"director": "Peter Jackson",
+			"color": "#403d34",
+			"offset": "4"
+		},
+		{
 			"id": "TheWizardOfOz",
 			"title": "The Wizard <br /> of Oz",
 			"year": "1939",
 			"director": "Victor Fleming",
 			"color": "#44392e",
-			"offset": "3"
+			"offset": "2"
 		},
 		{
 			"id": "Tron",
