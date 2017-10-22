@@ -6,7 +6,8 @@
 			"year": "2006",
 			"director": "Zack Snyder",
 			"color": "#43392e",
-			"offset": "3"
+			"offset": "3",
+			"info": "A lot has been said about Zack Snyder's use of colors, but <i>300</i> might be his most recognizable work. This ultra-violent fantasy peplum uses the same ochre tones as the original graphic novel by Frank Miller."
 		},
 		{
 			"id": "AmeliePoulain",
@@ -14,7 +15,8 @@
 			"year": "2000",
 			"director": "Jean-Pierre Jeunet",
 			"color": "#503c14",
-			"offset": "5"
+			"offset": "5",
+			"info": "The entire film bathes in yellowish and greenish tones, a distinctive gimmick of director Jean-Pierre Jeunet. This effect used to be achieved chemically, but Amelie was the first film to be digitally color graded in France, back in 2001."
 		},
 		{
 			"id": "BladeRunner",
@@ -22,7 +24,17 @@
 			"year": "1982",
 			"director": "Ridley Scott",
 			"color": "#1c2523",
-			"offset": "2"
+			"offset": "2",
+			"info": "Ridley Scott's dark and gloomy vision of Los Angeles in 2019 is reflected in its color palette, dominated by blue and ochre shades, as well as neon lights."
+		},
+		{
+			"id": "Frozen",
+			"title": "Frozen",
+			"year": "2013",
+			"director": "Chris Buck & Jennifer Lee",
+			"color": "#3c405a",
+			"offset": "7",
+			"info": "Disney's highest grossing animated film of all time has, as expected, a cold and blue palette."
 		},
 		{
 			"id": "GoneWithTheWind",
@@ -30,7 +42,8 @@
 			"year": "1939",
 			"director": "Victor Fleming",
 			"color": "#322118",
-			"offset": "15"
+			"offset": "15",
+			"info": "The (so far) highest grossing film of all time is all about ochres, the color of the south. Still, we can notice an artistic use of red during the burning of Atlanta."
 		},
 		{
 			"id": "GuardiansOfTheGalaxy",
@@ -38,7 +51,8 @@
 			"year": "2014",
 			"director": "James Gunn",
 			"color": "#2d2c2a",
-			"offset": "3"
+			"offset": "3",
+			"info": "Marvel's most irreverent franchise is not as colorful as one could expect. However, the use of strong hues (especially vivid blues, purples and greens) is refreshing, along with the awesome soundtrack."
 		},
 		{
 			"id": "LaLaLand",
@@ -46,7 +60,8 @@
 			"year": "2016",
 			"director": "Damien Chazelle",
 			"color": "#2e2d30",
-			"offset": "3"
+			"offset": "3",
+			"info": "Director Damien Chazelle's tribute to classic Hollywood musicals is all about colors. Costumes and sets tell a lot about the internal feelings of characters, as seasons pass by and Mia and Sebastian's love story goes downhill."
 		},
 		{
 			"id": "LeRoiEtLOiseau",
@@ -54,7 +69,8 @@
 			"year": "1979",
 			"director": "Paul Grimault",
 			"color": "#525958",
-			"offset": "3"
+			"offset": "3",
+			"info": "<i>The King and the Mockingbird</i> is the first French animated feature film. This 1979 masterpiece uses a light color palette to depict the Kingdom of Tachycardia and its disembodied architecture, delivering a sharp contrast to the darkness of the Lower City."
 		},
 		{
 			"id": "MadMaxFuryRoad",
@@ -62,7 +78,8 @@
 			"year": "2015",
 			"director": "George Miller",
 			"color": "#634e41",
-			"offset": "3"
+			"offset": "3",
+			"info": "Director George Miller's post-apocalyptic car chase is a visual masterpiece. The palette is mostly orange, as the entire film takes place in the desert, but we can notice an interesting use of a blue filter as a <i>day for night</i>."
 		},
 		{
 			"id": "MaryPoppins",
@@ -70,7 +87,8 @@
 			"year": "1964",
 			"director": "Robert Stevenson",
 			"color": "#3e3e41",
-			"offset": "9"
+			"offset": "9",
+			"info": "Early 20<sup>th</sup> century London was dark and grey, and so is 1964 <i>Mary Poppins</i>, with the notable exception of the animated sequence, dominated by pastel green hues."
 		},
 		{
 			"id": "Memento",
@@ -78,7 +96,17 @@
 			"year": "2000",
 			"director": "Christopher Nolan",
 			"color": "#403b39",
-			"offset": "5"
+			"offset": "5",
+			"info": "In <i>Memento</i>, the colors serve the narrative purpose of the film, as director Christopher Nolan intertwines sequences edited in a reverse chronological order with black and white flashbacks in chronological order."
+		},
+		{
+			"id": "Moana",
+			"title": "Moana",
+			"year": "2016",
+			"director": "Ron Clements & John Musker",
+			"color": "#504b4f",
+			"offset": "7",
+			"info": "Disney's interpretation of Polynesian mythology is dominated by blue, turquoise and purple tones, which is not surprising considering that </i>moana</i> means <i>ocean</i> in polynesian languages."
 		},
 		{
 			"id": "Mommy",
@@ -86,7 +114,8 @@
 			"year": "2014",
 			"director": "Xavier Dolan",
 			"color": "#3d372f",
-			"offset": "8"
+			"offset": "8",
+			"info": "Director Xavier Dolan's coming-of-age drama stands out from the crowd with its 1:1 aspect ratio, but also with its use of strong colors: in particular, the yellowish tones of the house give us a feeling of intimacy as we dive into the lives of the Després family."
 		},
 		{
 			"id": "MrNobody",
@@ -94,7 +123,8 @@
 			"year": "2009",
 			"director": "Jaco van Dormael",
 			"color": "#52534d",
-			"offset": "9"
+			"offset": "9",
+			"info" : "Belgian director Jaco van Dormael's sci-fi drama uses different palettes to explore the alternate lives of Nemo Nobody, along with a desaturated color grading."
 		},
 		{
 			"id": "SpeedRacer",
@@ -102,7 +132,8 @@
 			"year": "2008",
 			"director": "Lana & Lilly Wachowski",
 			"color": "#503940",
-			"offset": "3"
+			"offset": "3",
+			"info": "<i>Speed Racer</i> is the very definition of colorful. To recreate the atmosphere of Japanese anime <i>Mach GoGoGo</i>, the Wachowskis chose to use computer-generated sets, leading to this kitsch, psychedelic, and deliberately unrealistic aesthetic."
 		},
 		{
 			"id": "StarTrekIntoDarkness",
@@ -110,7 +141,8 @@
 			"year": "2013",
 			"director": "J. J. Abrams",
 			"color": "#36484b",
-			"offset": "6"
+			"offset": "6",
+			"info": "J. J. Abrams' shiny (and <i>lens-flary</i>) vision of the future involves a light blue palette, like the corridors of the <i>Enterprise</i>. Fun fact: <i>Star Trek Into Darkness</i> had so many lens flares that Abrams had to ask <i>Industrial Light & Magic</i> to remove some of them digitally."
 		},
 		{
 			"id": "StarWars",
@@ -118,7 +150,17 @@
 			"year": "1977",
 			"director": "George Lucas",
 			"color": "#332d31",
-			"offset": "3"
+			"offset": "3",
+			"info": "George Lucas' history-making film needs no introduction. As is to be expected from a space-opera, the palette is quite dark except for the scenes taking place on Tatooine."
+		},
+		{
+			"id": "TheGrandBudapestHotel",
+			"title": "The Grand <br /> Budapest Hotel",
+			"year": "2013",
+			"director": "Wes Anderson",
+			"color": "#533b38",
+			"offset": "7",
+			"info": "Director Wes Anderson is known for its use of light pastel colors, and <i>The Grand Budapest Hotel</i> is no exception, with its orange and rose hues."
 		},
 		{
 			"id": "TheMatrix",
@@ -126,7 +168,8 @@
 			"year": "1999",
 			"director": "Lana & Lilly Wachowski",
 			"color": "#273028",
-			"offset": "3"
+			"offset": "3",
+			"info": "In order to visually suggest the artificiality of the Matrix, the Wachowskis decided to use a greenish color grading on all scenes taking place inside the computer simulation, whereas the scenes set in the real world are usually dark blue."
 		},
 		{
 			"id": "TheReturnOfTheKing",
@@ -134,7 +177,8 @@
 			"year": "2003",
 			"director": "Peter Jackson",
 			"color": "#403d34",
-			"offset": "4"
+			"offset": "4",
+			"info": "The final instalment of <i>The Lord of the Rings</i> trilogy is also the longest: 253 minutes(!) for the extended version. Its surprisingly colorful palette is dominated by ochre, greyish blue and green hues."
 		},
 		{
 			"id": "TheWizardOfOz",
@@ -142,7 +186,8 @@
 			"year": "1939",
 			"director": "Victor Fleming",
 			"color": "#44392e",
-			"offset": "2"
+			"offset": "2",
+			"info": "One of the earliest use of color as an artistic mean in a film: the scenes taking place in Kansas are shot in black and white (or rather in sepia), whereas the fantasy world of Oz is in Technicolor, with a predominance of yellow and green hues."
 		},
 		{
 			"id": "Tron",
@@ -150,7 +195,8 @@
 			"year": "1982",
 			"director": "Steven Lisberger",
 			"color": "#282a3d",
-			"offset": "3"
+			"offset": "3",
+			"info": "In his depiction of the inside of a computer, <i>Tron</i> undoubtedly represents a milestone in the use of CGI in films. A deeply innovative aesthetic, made of neon costumes and virtual sets, gives its <i>electric blue</i> color to the film."
 		}
 	]
 

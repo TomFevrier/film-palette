@@ -1,6 +1,8 @@
 var unit;
 var repo = 'film-palette';
 var frames = [];
+var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
 function init() {
 
@@ -40,7 +42,20 @@ function init() {
 				var director = document.createElement('h2');
 				director.innerHTML = data.films[i].director;
 
+				var info = document.createElement('p');
+				if (data.films[i].info != undefined) {
+					info.innerHTML = data.films[i].info;
+				}
+				else {
+					info.innerHTML = "No description available yet."
+				}
+				info.style.textAlign = 'justify';
+				info.style.width = Math.floor(0.3*w) + 'px';
+
 				var text = document.getElementById('text');
+				text.appendChild(title);
+				text.appendChild(director);
+				text.appendChild(info);
 
 				var offset = parseInt(data.films[i].offset);
 				var loaded = 0;
@@ -56,9 +71,6 @@ function init() {
 					};
 				}
 
-				text.appendChild(title);
-				text.appendChild(director);
-
 				break;
 			}
 		}
@@ -69,23 +81,8 @@ function init() {
 		var data = JSON.parse(response);
 		var id = window.location.hash.replace(/#/g, '');
 
-		var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 		unit = Math.min(Math.floor(0.05*h), Math.floor(0.02*w));
 		var dimension = unit*20;
-
-		var info = document.createElement('p');
-		if (data.info != undefined) {
-			info.innerHTML = data.info;
-		}
-		else {
-			info.innerHTML = "No description available yet."
-		}
-		info.style.textAlign = 'justify';
-		info.style.width = Math.floor(0.3*w) + 'px';
-
-		var text = document.getElementById('text');
-		text.appendChild(info);
 
 		var frame = document.getElementById('frame');
 		var imgForRatio = new Image();
