@@ -40,7 +40,7 @@ function init() {
 				document.title = data.films[i].title.replace('<br />', '');
 
 				var director = document.createElement('h2');
-				director.innerHTML = data.films[i].director;
+				director.innerHTML = data.films[i].director.replace('<br />', '');
 
 				var info = document.createElement('p');
 				if (data.films[i].info != undefined) {

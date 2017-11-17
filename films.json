@@ -31,7 +31,7 @@
 			"id": "Frozen",
 			"title": "Frozen",
 			"year": "2013",
-			"director": "Chris Buck & Jennifer Lee",
+			"director": "Chris Buck <br /> & Jennifer Lee",
 			"color": "#3c405a",
 			"offset": "7",
 			"info": "Disney's highest grossing animated film of all time has, as expected, a cold and blue palette."
@@ -103,7 +103,7 @@
 			"id": "Moana",
 			"title": "Moana",
 			"year": "2016",
-			"director": "Ron Clements & John Musker",
+			"director": "Ron Clements <br /> & John Musker",
 			"color": "#504b4f",
 			"offset": "7",
 			"info": "Disney's interpretation of Polynesian mythology is dominated by blue, turquoise and purple tones, which is not surprising considering that </i>moana</i> means <i>ocean</i> in polynesian languages."
@@ -127,10 +127,18 @@
 			"info" : "Belgian director Jaco van Dormael's sci-fi drama uses different palettes to explore the alternate lives of Nemo Nobody, along with a desaturated color grading."
 		},
 		{
+			"id": "Mulan",
+			"title": "Mulan",
+			"year": "1998",
+			"director": "Tony Bancroft <br /> & Barry Cook",
+			"color": "#4b4448",
+			"offset": "4"
+		},
+		{
 			"id": "SpeedRacer",
 			"title": "Speed Racer",
 			"year": "2008",
-			"director": "Lana & Lilly Wachowski",
+			"director": "Lana & Lilly <br /> Wachowski",
 			"color": "#503940",
 			"offset": "3",
 			"info": "<i>Speed Racer</i> is the very definition of colorful. To recreate the atmosphere of Japanese anime <i>Mach GoGoGo</i>, the Wachowskis chose to use computer-generated sets, leading to this kitsch, psychedelic, and deliberately unrealistic aesthetic."
@@ -166,7 +174,7 @@
 			"id": "TheMatrix",
 			"title": "The Matrix",
 			"year": "1999",
-			"director": "Lana & Lilly Wachowski",
+			"director": "Lana & Lilly <br /> Wachowski",
 			"color": "#273028",
 			"offset": "3",
 			"info": "In order to visually suggest the artificiality of the Matrix, the Wachowskis decided to use a greenish color grading on all scenes taking place inside the computer simulation, whereas the scenes set in the real world are usually dark blue."
