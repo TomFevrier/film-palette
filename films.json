@@ -28,6 +28,14 @@
 			"info": "Ridley Scott's dark and gloomy vision of Los Angeles in 2019 is reflected in its color palette, dominated by blue and ochre shades, as well as neon lights."
 		},
 		{
+			"id": "CrimsonPeak",
+			"title": "Crimson Peak",
+			"year": "2015",
+			"director": "Guillermo del Toro",
+			"color": "#2e251e",
+			"offset": "3"
+		},
+		{
 			"id": "Frozen",
 			"title": "Frozen",
 			"year": "2013",
@@ -135,6 +143,14 @@
 			"offset": "4"
 		},
 		{
+			"id": "SinginInTheRain",
+			"title": "Singin' in the Rain",
+			"year": "1952",
+			"director": "Gene Kelly & Stanley Donen",
+			"color": "#453735",
+			"offset": "3"
+		},
+		{
 			"id": "SpeedRacer",
 			"title": "Speed Racer",
 			"year": "2008",
@@ -142,6 +158,14 @@
 			"color": "#503940",
 			"offset": "3",
 			"info": "<i>Speed Racer</i> is the very definition of colorful. To recreate the atmosphere of Japanese anime <i>Mach GoGoGo</i>, the Wachowskis chose to use computer-generated sets, leading to this kitsch, psychedelic, and deliberately unrealistic aesthetic."
+		},
+		{
+			"id": "SpiritedAway",
+			"title": "Spirited Away",
+			"year": "2001",
+			"director": "Hayao Miyazaki",
+			"color": "#5e5244",
+			"offset": "3"
 		},
 		{
 			"id": "StarTrekIntoDarkness",
